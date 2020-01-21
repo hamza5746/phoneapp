@@ -1,0 +1,31 @@
+<form #form="ngForm" (ngSubmit)="editSubmit(form)">
+    <div class="form-group">
+        <label for="">Name </label>
+        <input class="form-control" type="text" ngModel [(ngModel)]="contact.fname" name="fname" #fname="ngModel" fname required>
+        <div *ngIf="fname.touched && !fname.valid ">
+        <span class="help-bpx" *ngIf="fname.touched && !fname.valid ">Please enter the fname Value</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Contact </label>
+        <input class="form-control" type="text" ngModel name="contactno"  
+        [(ngModel)]="contact.contactno" #contactno="ngModel" minlength="11" 
+        maxlength="11" placeholder="03XX-XXXXXXX"  contactno required >
+        <div *ngIf="contactno.touched && !contactno.valid ">
+            <span class="help-bpx" *ngIf="contactno.touched && !contactno.valid ">
+                *Please enter the contactno
+            </span>
+            <span class="help-bpx" *ngIf="contactno.errors.minlength">
+                {{ contactno.errors.minlength.requiredLength }} digits
+            </span>
+            <span class="help-bpx" *ngIf="contactno.errors.maxlength">
+                    {{ contactno.errors.maxlength.requiredLength }} digits
+            </span>
+        </div>
+    </div>
+    <br/>
+    <div class="align-center">
+        <button type="submit" class="btn btn-primary" id="updateContact" [disabled]="!form.valid" >Update</button>
+        <a type="button" (click)="cancel()" class="btn btn-danger">Cancel</a>
+    </div>
+</form>
