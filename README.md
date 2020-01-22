@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
+## Live
+https://phoneapp-9c902.firebaseapp.com/
+
+## Installing Dependencies
+
+Run `npm install --save-dev` for a installing dependencies. The app will automatically reload if you change any of the source 
+
+## Users for login (mention in user.service.ts)
+1. email:hamza_hanif77@hotmail.com
+   password:12345678
+2. email:fazal.mahmood@ignitelabs.co
+   password:87654321
+ 
+ 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
