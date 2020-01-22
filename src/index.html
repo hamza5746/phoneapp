@@ -8,6 +8,30 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyADmbIHHwUp_HgU4E7ZmK8YzRqJ4S0PPQs",
+        authDomain: "phoneapp-9c902.firebaseapp.com",
+        databaseURL: "https://phoneapp-9c902.firebaseio.com",
+        projectId: "phoneapp-9c902",
+        storageBucket: "phoneapp-9c902.appspot.com",
+        messagingSenderId: "378222143007",
+        appId: "1:378222143007:web:cd18bed80ecf3f8ee6d72a",
+        measurementId: "G-T97WRRBJCM"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   <app-root></app-root>
 </body>
+
 </html>
