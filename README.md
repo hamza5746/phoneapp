@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
+## Live
+https://phoneapp-9c902.firebaseapp.com/
+
 ## Installing Dependencies
 
 Run `npm install --save-dev` for a installing dependencies. The app will automatically reload if you change any of the source 
